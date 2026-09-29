@@ -56,7 +56,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last Updated: September 20, 2026</p>
+    <p class="last-updated">Last Updated: September 29, 2026</p>
 
     <p>This Privacy Policy describes how Prepair ("we," "us," or "our") collects, uses, and shares your personal information when you use our interview preparation mobile application (the "App").</p>
 
@@ -91,10 +91,10 @@
     <ul>
         <li><strong>Provide Core Services:</strong> Enable interview practice, generate personalized feedback, track your progress, and provide career coaching</li>
         <li><strong>Personalization:</strong> Customize interview questions based on your role, industry, and experience level</li>
-        <li><strong>Speech Processing:</strong> Convert your spoken responses to text using AssemblyAI's speech-to-text service</li>
-        <li><strong>Response Generation:</strong> Generate interview questions and provide feedback using Grok AI</li>
-        <li><strong>Voice Synthesis:</strong> Convert AI-generated text to speech using Google's Gemini TTS service</li>
-        <li><strong>Image Processing:</strong> Generate professional headshots using Google's Nano Banana CV model (if you use this feature)</li>
+        <li><strong>Live Interviews:</strong> Hold a real-time spoken interview with an AI interviewer using OpenAI's realtime voice model</li>
+        <li><strong>Speech Processing:</strong> Convert your spoken answers in rapid fire and standard interviews to text using AssemblyAI's speech-to-text service</li>
+        <li><strong>Response Generation:</strong> Generate questions, scores, feedback, model answers and career coaching using Grok AI (xAI)</li>
+        <li><strong>Voice Synthesis:</strong> Convert interviewer questions to speech using Google's Gemini text-to-speech service</li>
         <li><strong>Analytics:</strong> Analyze your practice patterns to show meaningful progress metrics and improvement areas</li>
         <li><strong>Subscription Management:</strong> Process and manage your premium subscription through RevenueCat</li>
         <li><strong>Customer Support:</strong> Respond to your questions and provide technical assistance</li>
@@ -107,47 +107,54 @@
 
     <h2>3. Third-Party Service Providers</h2>
 
-    <p>We share your information with the following trusted third-party services to operate our App:</p>
+    <p>We share your information with the following third-party services to operate the App. The AI services (3.1–3.4) receive your data only after you allow AI data sharing in the App (see section 5.5), and only to provide the feature you are using. We remove your email address and phone number from the profile context we send to them.</p>
 
-    <h3>3.1 Grok AI (xAI)</h3>
+    <h3>3.1 OpenAI</h3>
     <ul>
-        <li><strong>Purpose:</strong> Generate interview questions, provide coaching feedback, and power the career coach feature</li>
-        <li><strong>Data Shared:</strong> Your interview responses, profile information, and career questions</li>
+        <li><strong>Purpose:</strong> Power Live interviews, the real-time spoken conversation with the AI interviewer</li>
+        <li><strong>Data Shared:</strong> Your microphone audio during a Live interview; the interviewer's instructions, which include your first name, target role and company, the job description you add, and a summary of your profile (work history, education, skills); the conversation transcript</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://openai.com/policies/privacy-policy/" target="_blank">https://openai.com/policies/privacy-policy/</a></li>
+    </ul>
+
+    <h3>3.2 Grok AI (xAI)</h3>
+    <ul>
+        <li><strong>Purpose:</strong> Generate interview and rapid-fire questions, scores, feedback and model answers, and power the career coach, resume review and follow-up email features</li>
+        <li><strong>Data Shared:</strong> Your interview transcripts and answers, profile information, job descriptions you add, résumé text you upload, and questions you ask the coach</li>
         <li><strong>Privacy Policy:</strong> <a href="https://x.ai/legal/privacy-policy" target="_blank">https://x.ai/legal/privacy-policy</a></li>
     </ul>
 
-    <h3>3.2 AssemblyAI</h3>
+    <h3>3.3 AssemblyAI</h3>
     <ul>
-        <li><strong>Purpose:</strong> Convert your spoken interview responses to text</li>
-        <li><strong>Data Shared:</strong> Audio recordings of your practice sessions</li>
+        <li><strong>Purpose:</strong> Convert your spoken answers in rapid fire and standard interviews to text</li>
+        <li><strong>Data Shared:</strong> Your microphone audio while you answer</li>
         <li><strong>Privacy Policy:</strong> <a href="https://www.assemblyai.com/legal/privacy-policy" target="_blank">https://www.assemblyai.com/legal/privacy-policy</a></li>
     </ul>
 
-    <h3>3.3 Google Gemini TTS</h3>
+    <h3>3.4 Google (Gemini text-to-speech)</h3>
     <ul>
-        <li><strong>Purpose:</strong> Generate natural-sounding voice for the AI interviewer</li>
-        <li><strong>Data Shared:</strong> Interview questions and text to be spoken</li>
+        <li><strong>Purpose:</strong> Give the AI interviewer a natural-sounding voice in rapid fire and standard interviews</li>
+        <li><strong>Data Shared:</strong> The interviewer's questions and other text to be spoken</li>
         <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
     </ul>
 
-    <h3>3.4 Google Nano Banana CV Model</h3>
+    <h3>3.5 Cloudflare</h3>
     <ul>
-        <li><strong>Purpose:</strong> Generate professional AI headshots</li>
-        <li><strong>Data Shared:</strong> Photos you upload for headshot generation (only when you use this feature)</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+        <li><strong>Purpose:</strong> A secure relay between the App and the AI services above, so no AI provider keys are stored in the App</li>
+        <li><strong>Data Shared:</strong> Requests to the AI services (audio and text) pass through Cloudflare in transit; our relay does not store their contents</li>
+        <li><strong>Privacy Policy:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">https://www.cloudflare.com/privacypolicy/</a></li>
     </ul>
 
-    <h3>3.5 Supabase</h3>
+    <h3>3.6 Supabase</h3>
     <ul>
-        <li><strong>Purpose:</strong> User authentication, account management, and data storage</li>
-        <li><strong>Data Shared:</strong> Account credentials, profile information, and app data</li>
+        <li><strong>Purpose:</strong> User authentication, account management, and storage of your synced app data</li>
+        <li><strong>Data Shared:</strong> Account credentials (email, sign-in provider), profile information, and app data you sync to your account (see section 4.1)</li>
         <li><strong>Privacy Policy:</strong> <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></li>
     </ul>
 
-    <h3>3.6 RevenueCat</h3>
+    <h3>3.7 RevenueCat</h3>
     <ul>
         <li><strong>Purpose:</strong> Subscription management and in-app purchase tracking</li>
-        <li><strong>Data Shared:</strong> Subscription status, purchase history, and device identifiers</li>
+        <li><strong>Data Shared:</strong> Subscription status, purchase history, your account ID, email address, and device identifiers</li>
         <li><strong>Privacy Policy:</strong> <a href="https://www.revenuecat.com/privacy" target="_blank">https://www.revenuecat.com/privacy</a></li>
     </ul>
 
@@ -155,8 +162,8 @@
 
     <h3>4.1 Data Storage</h3>
     <ul>
-        <li>Your data is stored securely using Supabase's cloud infrastructure</li>
-        <li>Interview recordings are stored on your device and optionally backed up to secure cloud storage</li>
+        <li>Your app data (profile, interview history and feedback, rapid-fire answers, applications and your Live minute balance) is stored on your device and, when you are signed in, synced to your account in Supabase so it is available on your other devices</li>
+        <li>Audio recordings of standard interviews stay on your device and are not uploaded to our storage</li>
         <li>All data transmissions are encrypted using industry-standard SSL/TLS protocols</li>
     </ul>
 
@@ -165,7 +172,7 @@
         <li><strong>Account Data:</strong> Retained for as long as your account is active</li>
         <li><strong>Interview Sessions:</strong> Stored indefinitely unless you delete them manually</li>
         <li><strong>Deleted Data:</strong> Permanently removed from our systems within 30 days of deletion request</li>
-        <li><strong>Third-Party Processing:</strong> Audio/text processed by AI services is not retained by those services after processing</li>
+        <li><strong>AI Processing:</strong> The AI services in section 3 process your data to provide the feature and handle it under their own API terms and privacy policies, which may include keeping it for a limited period (for example for abuse monitoring)</li>
     </ul>
 
     <h3>4.3 Security Measures</h3>
@@ -190,8 +197,7 @@
     <h3>5.2 Permission Controls</h3>
     <ul>
         <li><strong>Microphone:</strong> Required for interview practice; can be managed in device settings</li>
-        <li><strong>Camera:</strong> Optional for video interview practice; can be disabled anytime</li>
-        <li><strong>Notifications:</strong> Can be disabled in App settings or device settings</li>
+        <li><strong>Camera:</strong> Not used by the current version of the App</li>
     </ul>
 
     <h3>5.3 Marketing Communications</h3>
@@ -203,10 +209,13 @@
     <h3>5.4 Account Deletion</h3>
     <p>To delete your account:</p>
     <ol>
-        <li>Go to Settings → Profile → Delete Account</li>
+        <li>In the App, go to Profile → Data &amp; Privacy → Delete Account</li>
         <li>Or email us at karoljaworsky@gmail.com</li>
         <li>All your data will be permanently deleted within 30 days</li>
     </ol>
+
+    <h3>5.5 AI Data Sharing</h3>
+    <p>Prepair's practice features are powered by the AI services listed in section 3. Before your data is sent to any of them for the first time, the App shows you who receives what and asks for your permission. You can withdraw it at any time in Profile → Data &amp; Privacy → AI data sharing; the AI features then stop working until you allow it again. Withdrawing does not delete data the services have already processed; see their policies.</p>
 
     <h2>6. Biometric Data</h2>
 
@@ -325,7 +334,7 @@
     </ul>
     <p>To exercise these rights, contact us at karoljaworsky@gmail.com.</p>
 
-    <h2>9. European Privacy Rights (GDPR)</h2>
+    <h2>10. European Privacy Rights (GDPR)</h2>
     <p>If you are in the European Economic Area (EEA), you have rights under GDPR:</p>
     <ul>
         <li><strong>Right to Access:</strong> Obtain confirmation of data processing and access your data</li>
